@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script
+ src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script> 
+    $(document).ready(function() {
+    $(".cross").click(function() {
+    $(".sidebar").hide(1000);
+    $(".cross").hide(1000);
+    $(".menu").show(1000);
+    });
+    $("#menu").click(function() {
+    $("#sidebar").show(1000);
+    $("#cross").show(1000);
+    $("#menu").hide(1000);
+    });
+    });
+   
+   
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebargo" id="sidebar">
+
+            <nav>
+                <ul>
+                    <li> <a href="index.html"> Home</a></li>
+                    <li> <a href="intro.html"> My Intro</a></li>
+                    <li> <a href="services.html"> Services</a></li>
+                    <li> <a href="contact.html"> Contact me</a></li>
+                    <li> <a href="blog.html"> Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="menu">
+                <img class="menu" src="menu.png" alt="" width="23px" id="menu">
+                <img class="cross" src="cross.png" alt="" width="23px" id="cross">
+            </div>
+            <div class="infoContainer">
+                <div class="devInfo">
+                    <div class="hello">Hi I'm</div>
+                    <div class="name">Ravi</div>
+                    <div class="about">Developer</div>
+                    <div class="moreabout">I'm a web developer and I live in jamshedpur but currently I've shifted to
+                        Bhubaneshwar for my further studies.</div>
+                    <div class="buttons">
+                        <a href="contact.html" target="_blank"> <button>Download CV</button></a>
+                        <a href="contact.html">  <button> Contact me</button></a>
+                    </div>
+                </div>
+                <div class="devPic"><img src="man.png" alt="man">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
